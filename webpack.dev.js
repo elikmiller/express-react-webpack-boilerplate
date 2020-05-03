@@ -7,10 +7,6 @@ module.exports = {
   mode: "development",
   entry: ["webpack-hot-middleware/client", "./src/client/index.js"],
   devtool: "inline-source-map",
-  devServer: {
-    contentBase: "./dist",
-  },
-  stats: "detailed",
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
